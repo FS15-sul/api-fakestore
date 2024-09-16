@@ -9,8 +9,17 @@
 
 </head>
 
-<body>
-
+<body class="bg-slate-200 py-[100px]">
+    <div class="px-[100px] mb-5">
+        <select id="ordenar" class="w-[250px] h-[40px] rounded-md" onchange="ordenarProdutos()">
+            <option disabled selected>-- Ordenar --</option>
+            <option value="1">por preço</option>
+            <option value="2">por avaliação</option>
+        </select>
+        <select id="categorias" class="w-[250px] h-[40px] rounded-md" onchange="mostrarUmaCategoria()">
+            <option disabled selected>-- Escolha uma categoria --</option>
+        </select>
+    </div>
     <ul id="produtos" class="grid grid-cols-4 gap-3 px-[100px]"></ul>
 
 
